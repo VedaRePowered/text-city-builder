@@ -3,8 +3,9 @@
 #include "cell.hpp"
 
 namespace tcb {
+
 class Grid {
-  private:
+private:
 	const static int max_x = 100;
 	const static int max_y = 100;
 
@@ -13,7 +14,7 @@ class Grid {
 	int get_cell_x(Cell *cell);
 	int get_cell_y(Cell *cell);
 
-  public:
+public:
 	void init_grid();
 
 	Cell *get_cell(int x, int y);
@@ -22,4 +23,5 @@ class Grid {
 	Cell *get_cell_south(Cell *cell);
 	Cell *get_cell_west(Cell *cell);
 };
+
 }	// namespace tcb

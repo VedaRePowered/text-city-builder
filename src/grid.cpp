@@ -1,6 +1,7 @@
 #include "grid.hpp"
 
 namespace tcb {
+
 void Grid::init_grid() {
 	for (int i = 0; i < max_x; i++) {
 		for (int j = 0; j < max_y; j++) {
@@ -33,4 +34,5 @@ Cell *Grid::get_cell_south(Cell *cell) {
 Cell *Grid::get_cell_west(Cell *cell) {
 	return get_cell(cell->get_x_loc() - 1, cell->get_y_loc());
 }
+
 }	// namespace tcb

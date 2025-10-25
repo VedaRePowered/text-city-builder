@@ -1,8 +1,9 @@
 #pragma once
 
 namespace tcb {
+
 class Cell {
-  private:
+private:
 	int x_loc;
 	int y_loc;
 
@@ -15,10 +16,11 @@ class Cell {
 
 	CellType cell_type;
 
-  public:
+public:
 	void set_x_loc(int x);
 	int get_x_loc();
 	void set_y_loc(int y);
 	int get_y_loc();
 };
+
 }	// namespace tcb

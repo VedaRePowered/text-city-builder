@@ -20,3 +20,4 @@ ConstructorInitializerIndentWidth: 3
 AccessModifierOffset: -3
 IndentAccessModifiers: false
 PPIndentWidth: 0
+WrapNamespaceBodyWithEmptyLines: Always
