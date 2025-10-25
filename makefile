@@ -29,6 +29,10 @@ fmt:
 	@echo -e "\x1b[1m ⇒ \x1b[35mAuto formatting\x1b[0m"
 	@clang-format -i $(SOURCES) $(HEADERS)
 
+lint:
+	@echo -e "\x1b[1m ⇒ \x1b[35mLinting\x1b[0m"
+	@clang-tidy $(SOURCES) $(HEADERS) -- $(FULLCFLAGS)
+
 clean:
 	@echo -e "\x1b[1m ⇒ \x1b[33mRemoving build files\x1b[0m"
 	@rm -rf $(TARGET) $(BUILD) compile_commands.json
